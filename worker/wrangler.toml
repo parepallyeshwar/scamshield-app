@@ -1,0 +1,19 @@
+name = "scamshield-api"
+main = "src/index.ts"
+compatibility_date = "2026-11-01"
+
+# Don't log request bodies — we never want users' messages in logs.
+[observability]
+enabled = false
+
+[vars]
+# Pick any Gemini model your key can use. Check AI Studio for current free-tier models.
+GEMINI_MODEL = "gemini-flash-latest"
+
+# 10 scans per minute per device and per IP.
+[[ratelimits]]
+name = "LIMITER"
+namespace_id = "1001"
+simple = { limit = 10, period = 60 }
+
+# Secret (not in this file):  npx wrangler secret put GEMINI_API_KEY

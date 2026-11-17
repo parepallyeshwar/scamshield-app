@@ -1,0 +1,76 @@
+{
+  "expo": {
+    "name": "ScamShield AI",
+    "slug": "scamshield-ai",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "scamshield",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#04050d",
+    "ios": {
+      "bundleIdentifier": "com.eshwarparepally.scamshield",
+      "buildNumber": "1",
+      "supportsTablet": false,
+      "infoPlist": {
+        "NSPhotoLibraryUsageDescription": "ScamShield reads a screenshot you choose so it can check the message in it for scams.",
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "package": "com.eshwarparepally.scamshield",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "backgroundColor": "#04050d",
+        "foregroundImage": "./assets/images/android-icon-foreground.png",
+        "backgroundImage": "./assets/images/android-icon-background.png",
+        "monochromeImage": "./assets/images/android-icon-monochrome.png"
+      },
+      "permissions": [],
+      "blockedPermissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.READ_CONTACTS"
+      ],
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "ScamShield reads a screenshot you choose so it can check the message in it for scams.",
+          "cameraPermission": false,
+          "microphonePermission": false
+        }
+      ],
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#04050d",
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 120
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    },
+    "extra": {
+      "router": {
+        "asyncRoutes": {
+          "web": true
+        }
+      },
+      "eas": {
+        "projectId": "01aaab85-77c8-4bbf-bfc8-158193ebf455"
+      }
+    },
+    "owner": "buildwith.eshwar"
+  }
+}
