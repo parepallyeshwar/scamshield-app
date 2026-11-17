@@ -7,7 +7,7 @@ Copy-paste ready. Character limits are noted in brackets.
 - **App name** [30]: `ScamShield AI – Scam Checker`
 - **Category:** Tools (Play) / Utilities (App Store)
 - **Price:** Free, no ads, no in-app purchases
-- **Privacy policy URL:** `https://<your-github-username>.github.io/scamshield/privacy.html`
+- **Privacy policy URL:** `https://parepallyeshwar.github.io/scamshield/privacy.html`
 - **Support email:** your email
 
 ## Google Play
